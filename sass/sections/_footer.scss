@@ -1,0 +1,128 @@
+.footer {
+  display: flex;
+  max-width: 144rem;
+  padding: 8rem 25.6rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 12rem;
+  background-color: #111;
+  color: #f5f0ec;
+  @media only screen and (max-width: $mobile_small) {
+    padding: 8rem 0rem;
+  }
+  &__up {
+    display: flex;
+    // max-width: 1040px;
+    width: 104rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6.2rem;
+
+    &--text {
+      font-size: 1.6rem;
+    }
+    @media only screen and (max-width: $mobile_small) {
+      width: auto;
+    }
+  }
+
+  &__up-line1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    @media only screen and (max-width: $mobile_small) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  &__up_wrap {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    @media only screen and (max-width: $mobile_small) {
+      flex-direction: column;
+    }
+  }
+  &__btn {
+    display: flex;
+    padding: 1.2rem 2.2rem 1.4rem 2.2rem;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 20rem;
+    background: $color-green;
+    color: #f5f0ec;
+    border: none;
+    transition: all 0.5s;
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-0.5rem);
+      box-shadow: 0 0.1rem 2rem rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__up-line2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    @media only screen and (max-width: $mobile_small) {
+      flex-direction: column;
+      align-items: center;
+      gap: 4rem;
+    }
+  }
+  &__links ul {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    @media only screen and (max-width: $mobile_small) {
+      flex-direction: column;
+    }
+  }
+
+  &__links ul li a {
+    text-decoration: none;
+    color: #f5f0ec;
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+
+  &__links ul li {
+    list-style: none;
+  }
+
+  &__address_wrap {
+    display: flex;
+    align-items: flex-start;
+    gap: 4.8rem;
+    font-size: 1.4rem;
+  }
+
+  &__bottom {
+    display: flex;
+    width: 104rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    @media only screen and (max-width: $mobile_small) {
+      flex-direction: column;
+      width: auto;
+    }
+
+    .madeBy {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+    }
+  }
+
+  .line {
+    width: 100%;
+    border-bottom: 3px #f5f0ec solid;
+    @media only screen and (max-width: $mobile_small) {
+      display: none;
+    }
+  }
+}

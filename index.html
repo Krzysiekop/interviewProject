@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GiardDesign</title>
+  </head>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+
+  <script defer src="scripts/slider.js"></script>
+  <script defer src="scripts/searchBar.js"></script>
+  <script defer src="scripts/dropDownMenu.js"></script>
+  <script defer src="scripts/mansoryInitializer.js"></script>
+  <script defer src="scripts/showMoreButton.js"></script>
+  <script defer src="scripts/galleryPopUp.js"></script>
+  <body>
+    <main>
+      <section class="navigation">
+        <img
+          src="img/giarddesign.svg"
+          alt=""
+          srcset=""
+          class="navigation__logo"
+        />
+        <div class="navigation__list">
+          <ul>
+            <li class="navigation__list--oferta">
+              <a href="#">Oferta</a> <img src="img/Icon.svg" alt="" srcset="" />
+              <!-- Drop Menu -->
+              <div class="dropMenu">
+                <div>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Velit, odit est sint rerum quas magnam voluptas iusto
+                </div>
+              </div>
+              <!-- End of Drop Menu -->
+            </li>
+            <li><a href="#">O firmie</a></li>
+            <li><a href="#">Realizacje</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+          <input class="navigation__search_bar" placeholder="Szukaj" />
+          <img
+            src="img/Icon 01.svg"
+            alt=""
+            srcset=""
+            class="navigation__search_icon"
+          />
+        </div>
+      </section>
+
+      <section class="hero">
+        <div class="hero slider1">
+          <div class="hero__content">
+            <div class="hero__head">Nowoczesna aranżacja Twojego ogrodu</div>
+            <div class="hero__parag">
+              Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+              realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
+              podejściem do każdego projektu.
+            </div>
+            <div class="hero__buttons">
+              <button class="hero__buttons--left">Skontaktuj się z nami</button>
+              <button class="hero__buttons--right">
+                Zobacz nasze realizacje
+                <img src="img/Vector.svg" alt="" srcset="" />
+              </button>
+            </div>
+          </div>
+          <img class="hero__photo" src="img/slider1.jpg" alt="" srcset="" />
+        </div>
+        <div class="hero slider2">
+          <div class="hero__content">
+            <div class="hero__head">Slide 2</div>
+            <div class="hero__parag">
+              Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+              realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
+              podejściem do każdego projektu. Slide2
+            </div>
+            <div class="hero__buttons">
+              <button class="hero__buttons--left">Skontaktuj się z nami</button>
+              <button class="hero__buttons--right">
+                Zobacz nasze realizacje
+                <img src="img/Vector.svg" alt="" srcset="" />
+              </button>
+            </div>
+          </div>
+          <img class="hero__photo" src="img/slider3.jpg" alt="" srcset="" />
+        </div>
+        <div class="hero slider3">
+          <div class="hero__content">
+            <div class="hero__head">Slide 3</div>
+            <div class="hero__parag">
+              Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+              realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
+              podejściem do każdego projektu. Slide3
+            </div>
+            <div class="hero__buttons">
+              <button class="hero__buttons--left">Skontaktuj się z nami</button>
+              <button class="hero__buttons--right">
+                Zobacz nasze realizacje
+                <img src="img/Vector.svg" alt="" srcset="" />
+              </button>
+            </div>
+          </div>
+          <img class="hero__photo" src="img/slider2.jpg" alt="" srcset="" />
+        </div>
+        <div class="slaider__navi">
+          <div class="slaider__navi--left">←</div>
+          <div class="slaider__navi--right">→</div>
+        </div>
+      </section>
+
+      <section class="oferta">
+        <div class="content">
+          <div class="content__navi">Oferta</div>
+          <div class="content__head">Działamy <i>kompleksowo</i></div>
+          <div class="content__text">
+            Oferujemy kompletną obsługę inwestycji terenów zielonych.
+            Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne.
+            Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie,
+            a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="card__content">
+              <img class="icon" src="img/pencil.png" alt="" srcset="" />
+
+              <div class="text">
+                <div class="text__head">Projekty</div>
+                <div class="text__parag">
+                  Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
+                  wykorzystaniem istniejącej przestrzeni.
+                </div>
+              </div>
+            </div>
+            <button class="card__button">
+              Zobacz nasze realizacje
+              <img src="img/Vector.png" alt="" srcset="" />
+            </button>
+          </div>
+          <div class="card">
+            <div class="card__content">
+              <img class="icon" src="img/eye.png" alt="" srcset="" />
+
+              <div class="text">
+                <div class="text__head">Wizualizacje</div>
+                <div class="text__parag">
+                  Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego
+                  spaceru animowanego w technologii 3D.
+                </div>
+              </div>
+            </div>
+            <button class="card__button">
+              Zobacz nasze realizacje
+              <img src="img/Vector.png" alt="" srcset="" />
+            </button>
+          </div>
+          <div class="card">
+            <div class="card__content">
+              <img class="icon" src="img/stars.png" alt="" srcset="" />
+              <div class="text">
+                <div class="text__head">Realizacje</div>
+                <div class="text__parag">
+                  Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań
+                  i zaawansowanych technologii.
+                </div>
+              </div>
+            </div>
+            <button class="card__button">
+              Zobacz nasze realizacje
+              <img src="img/Vector.png" alt="" srcset="" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="ofirmie">
+        <img class="ofirmie__img" src="img/house.png" alt="" srcset="" />
+        <div class="ofirmie__wrap">
+          <div class="ofirmie__nav">O firmie</div>
+          <div class="ofirmie__head">Tworzymy z pasją</div>
+          <div class="ofirmie__text">
+            Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
+            wykwalifikowani projektanci oraz architekci, których zadaniem jest
+            rozpoznanie i realizacja potrzeb każdego Klienta. Nasza
+            specjalizacja to przestrzenie nowoczesne, które charakteryzuje
+            minimalizm, geometria i elegancka prostota. Tworzymy ogrody
+            małoobsługowe, dostosowane do współczesnego trybu życia.
+          </div>
+          <button class="ofirmie__button">
+            Poznaj nas bliżej <img src="img/arrow-right.png" alt="" srcset="" />
+          </button>
+        </div>
+      </section>
+      <div class="showMore">
+        <section class="realizacje">
+          <div class="realizacje__head">
+            <div class="realizacje__head--navi">Realizacje</div>
+            <div class="realizacje__head--text">Nasze projekty</div>
+          </div>
+          <div class="realizacje__galeria">
+            <div class="grid">
+              <div class="grid-sizer"></div>
+              <div class="gutter-sizer"></div>
+              <div class="grid-item">
+                <img
+                  class="gallery-item"
+                  src="img/gallery/1.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+
+              <div class="grid-item">
+                <img
+                  class="gallery-item"
+                  src="img/gallery/2.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  class="gallery-item"
+                  src="img/gallery/3.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  class="gallery-item"
+                  src="img/gallery/4.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  class="gallery-item"
+                  src="img/gallery/5.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  class="gallery-item"
+                  src="img/gallery/6.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  class="gallery-item"
+                  src="img/gallery/7.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  class="gallery-item"
+                  src="img/gallery/8.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="gradient"></div>
+          <div class="gradient__off">Rozwiń ↓</div>
+        </section>
+      </div>
+
+      <section class="insta">
+        <div class="insta__wrap">
+          <div class="insta__head">
+            Zostańmy w kontakcie!<br />
+            Znajdziesz nas na <i><b>Instagramie</b></i>
+          </div>
+          <div class="insta__content">
+            <div class="insta__content--tekst">
+              Śledź nasze najnowsze realizacje!
+            </div>
+            <button class="insta__content--button">Instagram</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer">
+        <div class="footer__up">
+          <div class="footer__up-line1">
+            <img
+              src="img/giarddesign.png"
+              alt=""
+              srcset=""
+              class="footer__logo"
+            />
+            <div class="footer__up_wrap">
+              <p class="footer__up--text">
+                Daj znać, co możemy dla Ciebie zrobić!
+              </p>
+              <button class="footer__btn">Skontaktuj się z nami</button>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="footer__up-line2">
+            <div class="footer__links">
+              <ul>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Linkedin</a></li>
+              </ul>
+            </div>
+            <div class="footer__address_wrap">
+              <div class="phone">000-000-000</div>
+              <div class="mail">giarddesign@kontakt.pl</div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="cc">Prawa zastrzeżone © 2022</div>
+          <div class="madeBy">
+            made by <img src="img/logo_footer_bottom.png" alt="" srcset="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="galery_pop_up">
+        <div class="galery_pop_up--close">X</div>
+        <img
+          class="galery_pop_up--image"
+          src="img/gallery/1.jpg"
+          alt=""
+          srcset=""
+        />
+        <div class="galery_pop_up--previous"><</div>
+        <div class="galery_pop_up--next">></div>
+      </section>
+
+      <div class="overlay"></div>
+    </main>
+  </body>
+</html>

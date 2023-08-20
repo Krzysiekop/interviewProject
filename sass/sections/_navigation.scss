@@ -1,0 +1,102 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.4rem 2rem;
+  align-items: center;
+  font-size: 1.4rem;
+  @media only screen and (max-width: $mobile_small) {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  &__list {
+    display: flex;
+    @media only screen and (max-width: $mobile_small) {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 2rem;
+    }
+    &--oferta {
+      display: flex;
+      gap: 5px;
+      position: relative;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__list ul {
+    display: flex;
+    gap: 4.8rem;
+    align-items: center;
+
+    @media only screen and (max-width: $mobile_tiny) {
+      gap: 3.8rem;
+    }
+  }
+
+  &__list ul li a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 400;
+  }
+
+  &__list ul li {
+    list-style: none;
+    &:hover {
+      border-bottom: 3px $color-green solid;
+    }
+  }
+
+  &__search_icon {
+    padding-left: 3rem;
+    &:hover {
+      cursor: pointer;
+    }
+    @media only screen and (max-width: $mobile_small) {
+      padding: 0rem;
+    }
+  }
+
+  &__search_bar {
+    margin-left: 2rem;
+    display: none;
+    border: 3px $color-beige solid;
+    animation-name: moveInRight;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+
+    @keyframes moveInRight {
+      0% {
+        opacity: 0;
+        transform: translateX(100px);
+      }
+      80% {
+        transform: translateX(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translate(0);
+      }
+    }
+  }
+
+  .dropMenu {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease;
+    display: grid;
+    grid-template-columns: min-content max-content;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    align-items: center;
+    background-color: $color-grey;
+    z-index: 5;
+  }
+}

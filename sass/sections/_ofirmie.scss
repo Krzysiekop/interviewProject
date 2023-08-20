@@ -1,0 +1,55 @@
+.ofirmie {
+  display: flex;
+  max-width: 144rem;
+  align-items: center;
+  gap: 6.4rem;
+  background: $color-green;
+  color: var(--grey, #f5f0ec);
+  &__wrap {
+    display: flex;
+    max-width: 59.6rem;
+    padding-left: 0rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7.2rem;
+    padding-right: 8rem;
+    // flex-shrink: 0;
+    @media only screen and (max-width: $mobile_small) {
+      align-items: center;
+      padding: 0rem 2rem 5rem 2rem;
+      text-align: center;
+    }
+  }
+  &__img {
+    width: 100%;
+  }
+  &__nav {
+    font-size: 1.2rem;
+  }
+  &__head {
+    font-size: 4.8rem;
+  }
+  &__text {
+    font-size: 1.6rem;
+    font-family: $font-secondary;
+  }
+  &__button {
+    display: flex;
+    padding: 1.2rem 2.2rem 1.4rem 2.2rem;
+    align-items: center;
+    gap: 8px;
+    border-radius: 200px;
+    border: 1px solid var(--grey, #f5f0ec);
+    background: $color-green;
+    color: #f5f0ec;
+    transition: all 0.5s;
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-0.5rem);
+      box-shadow: 0 0.1rem 2rem rgba(0, 0, 0, 0.2);
+    }
+  }
+  @media only screen and (max-width: $mobile_small) {
+    flex-direction: column;
+  }
+}

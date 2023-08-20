@@ -1,0 +1,50 @@
+$font-primary: "Montserrat", sans-serif;
+$font-secondary: "Inter", sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$mobile_medium: 1375px;
+$mobile_small: 1040px;
+$mobile_tiny: 450px;
+
+// Colors
+$color-green: #1b5b31;
+$color-beige: #dcc1ab;
+$color-grey: #f5f0ec;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,500;1,500&display=swap");
+
+@import "gallery";
+@import "galleryPopUp";
+
+@import "sections/navigation";
+@import "sections/hero";
+@import "sections/oferta";
+@import "sections/ofirmie";
+@import "sections/insta";
+@import "sections/realizacje";
+@import "sections/footer";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 500;
+}
+
+main {
+  max-width: 144rem;
+  margin: 0 auto;
+}

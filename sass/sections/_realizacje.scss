@@ -1,0 +1,80 @@
+.realizacje {
+  background-color: $color-beige;
+
+  &__head {
+    display: flex;
+    padding-left: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+    align-self: stretch;
+    padding: 12rem 0 10rem 12rem;
+
+    &--navi {
+      color: $color-green;
+      font-family: Inter;
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 18px */
+      letter-spacing: -0.12px;
+    }
+    &--text {
+      color: var(--black, #111);
+      font-family: Montserrat;
+      font-size: 4.8rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 115%; /* 55.2px */
+      letter-spacing: -1.44px;
+    }
+  }
+}
+
+.showMore {
+  height: 136rem;
+  overflow-y: clip;
+  position: relative;
+
+  @media only screen and (max-width: $mobile_small) {
+    height: auto;
+  }
+}
+.gradient {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 33%;
+  background: linear-gradient(
+    360deg,
+    $color-beige 0%,
+    rgba(214, 183, 158, 0) 100%
+  );
+  @media only screen and (max-width: $mobile_small) {
+    display: none;
+  }
+}
+
+.gradient__off {
+  position: absolute;
+  bottom: 10rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: inline-flex;
+  padding: 1.2rem 2.2rem 1.4rem 2.2rem;
+  align-items: center;
+  gap: 8px;
+  border-radius: 200px;
+  border: 1px solid var(--black, #111);
+  color: var(--black, #111);
+  text-align: center;
+  font-size: 1.6rem;
+  &:hover {
+    background-color: $color-green;
+    border: none;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: $mobile_small) {
+    display: none;
+  }
+}
