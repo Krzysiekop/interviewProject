@@ -6,3 +6,8 @@ var msnry = new Masonry( grid, {
   gutter: '.gutter-sizer',
   percentPosition: true
 });
+
+imagesLoaded( grid ).on( 'progress', function() {
+  // layout Masonry after each image loads
+  msnry.layout();
+});
